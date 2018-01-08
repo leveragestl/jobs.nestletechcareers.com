@@ -1183,12 +1183,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/build": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/build",
-		"oF": 0
-		},
 	"\/source\/job-details\/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -2052,7 +2046,7 @@
 	"displayValue": "jobs.nestletechcareers.com",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-obama",
-	"lastBuiltDate": 537084775
+	"lastBuiltDate": 537085934
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
