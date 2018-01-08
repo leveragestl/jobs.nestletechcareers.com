@@ -1,0 +1,41 @@
+/* BASE */
+  .button {
+    color: $white;
+    background: $link-color;
+    @include roboto-bold;
+    font-size: 18px;
+
+    a {
+      color: $white;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &.search {
+
+      a {
+
+        &:before {
+          content: '';
+          background: url(../images/icon-search@2x.png) no-repeat;
+          width: 26px;
+          height: 26px;
+          background-size: 26px 26px;
+          margin-right: 10px;
+          display: block;
+        }
+      }
+    }
+  }
+
+/* 650UP */
+  @media only screen and (min-width: 650px) {
+
+    .button {
+      font-size: 30px;
+    }
+
+  }
+/* END 650UP */

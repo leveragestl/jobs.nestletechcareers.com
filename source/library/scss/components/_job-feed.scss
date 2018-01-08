@@ -1,0 +1,138 @@
+/* 960UP */
+  @media only screen and (min-width: 960px) {
+
+    .job-feed-section {
+      background: $white;
+      padding: 75px 0 145px 0;
+
+      .inner {
+        width: 95%;
+        margin: 0 auto;
+      }
+
+      .pager {
+        margin: 0 0 80px 0;
+        font-size: 18px;
+        text-align: center;
+        display: block;
+
+        span,a {
+          display: inline-block;
+        }
+
+        .pager-info {
+          display: block;
+        }
+
+        .pager-prev-arrow,.pager-next-arrow,.current,a {
+          width: 30px;
+          height: 30px;
+          display: inline-block;
+          font-size: 16px;
+          line-height: 30px;
+
+          /*&.disabled {
+            background: #eee;
+          }*/
+        }
+
+        .pager-next,.pager-prev {
+          color: $white;
+          background: $link-color;
+          width: 90px;
+          height: 45px;
+          padding: 0 15px;
+          font-family: $sans-serif;
+          font-size: 14px;
+          line-height: 45px;
+          display: inline-block;
+          transition: .25s;
+
+          &:hover {
+            color: $white;
+            background: $link-hover;
+          }
+        }
+
+        .pager-next {
+          margin-left: 20px;
+        }
+
+        .pager-prev {
+          margin-right: 20px;
+        }
+      }
+
+      .job-list {
+        width: 100%;
+        max-width: 960px;
+        margin: 0 auto 80px auto;
+      }
+
+      th {
+        color: $darkgray;
+        text-align: center;
+        @include roboto-bold;
+        font-size: 15px;
+
+        a {
+          color: $darkgray;
+        }
+      }
+
+      td {
+        padding: 10px 5px;
+        font-size: 14px;
+        border-bottom: 1px solid #d7d4ca;
+
+        &.colcity,&.colstate {
+          text-align: center;
+        }
+      }
+
+      td.job-filter {
+        /*background: $cream;*/
+        padding-bottom: 30px;
+
+        input {
+          width: 100%;
+          margin: 0 auto;
+          padding: 4px;
+          display: block;
+          border: 1px solid #d7d4ca;
+          transition: .2s;
+
+          &:focus,&:hover {
+            outline: none;
+            border: 1px solid $darkbrown;
+          }
+        }
+      }
+
+      .jobFilterSearch {
+        color: $white;
+        background: $link-color;
+        width: 100%;
+        margin-bottom: 5px;
+        margin-top: 3px;
+        padding: 5px 10px;
+        border: none;
+        display: block;
+        font-family: $sans-serif;
+        text-align: center;
+        transition: .25s;
+
+        &:hover {
+          background: $link-hover;
+        }
+      }
+
+      .jobFilterReset {
+        text-align: center;
+        display: block;
+      }
+    }
+
+  }
+/* END 960UP */
+
