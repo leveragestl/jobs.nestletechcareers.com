@@ -1,0 +1,264 @@
+#contactForm_outerDiv {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#contactForm_panelBorder tr td {
+  border: none !important;
+}
+
+#contactForm_panelBorder tr td b {
+  border: none !important;
+}
+
+.tn-fields-tbl {
+  width: 100%;
+}
+
+.tn-fields-tbl tr td span:nth-of-type(2) {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  line-height: 13px;
+}
+
+.tn-fields-tbl tr td input,.tn-fields-tbl tr td textarea {
+  padding: 4px;
+  margin-bottom: 5px;
+  width: 100% !important;
+  height: auto !important;
+  font-size: 16px;
+  padding: 4px;
+  margin-bottom: 20px;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+
+.tn-fields-tbl tr td select {
+  width: 100% !important;
+  height: auto !important;
+  font-size: 16px;
+  padding: 4px;
+  margin-bottom: 20px;
+  display: block;
+  border: 1px solid #cccccc;
+}
+
+.tn-fields td {
+  width: 100%;
+  display: block;
+  text-align: left !important;
+}
+
+#tn_ja_a_criteria {
+  color:#2cb6e2;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.RadForm input[type="checkbox"], .RadForm input[type="radio"], .RadForm input[type="checkbox"][checked], .RadForm input[type="radio"][checked] {
+  margin-right: 5px !important;
+}
+
+#contactForm_cmd0 {
+  color: #fff;
+  background: #2cb6e2;
+  width: 200px !important;
+  display: block;
+  margin: 5px auto;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  border: none;
+  transition: background .3s;
+
+  &:hover {
+    background: #2cb6e2;
+  }
+}
+
+.td-job-alert input[type='checkbox'] {
+  width: 20px !important;
+}
+
+
+
+
+
+/***************/
+
+.talent-form-wrap {
+
+  .header {
+    background: #2cb6e2;
+    height: 70px;
+
+    .inner {
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    h1 {
+      background: url(https://www.nestletechcareers.com/library/images/logo.png) no-repeat;
+      // background: url(https://nestletechcareers.s3.amazonaws.com/smashfly-assets/logo.png) no-repeat;
+      background-size: 146.5px 37px;
+      width: 146.5px;
+      height: 37px;
+      margin: 0 0 0 10px;
+      position: absolute;
+      top: 18px;
+      text-indent: -9999px; outline: none;
+    }
+  }/* header */
+
+  .main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 2.5%;
+  }
+
+  p.center {
+    text-align: center;
+  }
+
+  .content {
+    width: 90%;
+    margin: 0 auto;
+
+    p {
+      text-align: center;
+    }
+  }
+
+  h2 {
+    color: #3b74ba;
+    margin: 40px auto 20px auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  h3 {
+    color: #555;
+    width: 95%;
+    max-width: 500px;
+    margin: 0 auto 40px auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  h4 {
+    color: #b3aa91;
+    margin: 0;
+    padding: 15px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    text-align: center;
+  }
+
+  p {
+    color: #555;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+
+    a {
+      color: #2cb6e2;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    &.note {
+      margin: 30px 0 0 0;
+      font-size: 12px;
+
+      span {
+        color: #2cb6e2;
+      }
+    }
+  }
+
+  .social {
+    margin: 0;
+    text-align: center;
+
+    li {
+      display: inline-block;
+    }
+  }
+
+  .form {
+    max-width: 565px;
+    margin: 0 auto;
+  }
+
+  .tn-fields {
+
+    span {
+      color: #4a4542;
+      margin-right: 5px;
+      font-family: 'Roboto', sans-serif, sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 11px;
+      line-height: 18px;
+    }
+  }
+
+  .footer {
+
+    p {
+      color: #888888;
+      margin: 30px auto;
+      text-align: center;
+      font-family: 'antenna-regular', sans-serif;
+      font-size: 12px;
+
+      a {
+        color: #888;
+        text-decoration: underline;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+/* 720UP */
+  @media only screen and (min-width: 720px) {
+
+    .RadForm input[type="checkbox"], .RadForm input[type="radio"], .RadForm input[type="checkbox"][checked], .RadForm input[type="radio"][checked] {
+      width: auto !important;
+      margin-right: 5px !important;
+      margin-left: 175px;
+    }
+
+    .talent-form-wrap {
+
+      h2 {
+        font-size: 60px;
+        line-height: 60px;
+        margin-top: 96px;
+      }
+
+      h3 {
+        width: 100%;
+        font-size: 30px;
+        line-height: 35px;
+      }
+
+      .tn-fields {
+
+        span {
+          font-size: 13px;
+        }
+      }
+
+    }
+
+  }/* 720 */
