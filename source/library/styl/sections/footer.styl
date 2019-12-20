@@ -1,0 +1,164 @@
+.siteFooter
+  color white
+  background: black
+  padding 90px 0 50px 0
+
+  a
+    color white
+
+  @media desktop
+    padding 185px 0 50px 0
+
+  &--inner
+    padding: 0 10px
+    text-align: center
+
+  &__title
+    margin-bottom 22px
+    univers-ultra-condensed()
+    font-size 3.2rem
+    text-transform: uppercase
+
+  &__tagline
+    margin-bottom 10px
+    univers-oblique()
+    line-height 2.2rem
+    font-size 1.7rem
+
+  &__socialList
+    margin 0 0 53px 0
+    padding 0
+    list-style: none
+    display flex
+    align-items: center
+    justify-content: center
+
+  &__socialListItem
+    margin 0 10px
+    display block
+    text-indent: -9999px; outline: none;
+
+    &--twitter
+      background: url(../images/icon-twitter.png) no-repeat
+      background-size: 31px 24.5px
+      width 31px
+      height 24.5px
+
+    &--facebook
+      background: url(../images/icon-facebook.png) no-repeat
+      background-size: 13.5px 27.5px
+      width 13.5px
+      height 27.5px
+
+    &--linkedin
+      background: url(../images/icon-linkedin.png) no-repeat
+      background-size: 28.5px 26.5px
+      width 28.5px
+      height 26.5px
+
+    &--youtube
+      background: url(../images/icon-youtube.png) no-repeat
+      background-size: 38px 26.5px
+      width 38px
+      height 26.5px
+
+  &__socialListLink
+    width 100%
+    height 100%
+    display block
+
+.linkLists
+  margin-bottom 60px
+  border-top: 1px solid #7b868c
+
+  @media desktop
+    width 960px
+    margin 0 auto 85px auto
+    border-top 0
+    display flex
+    flex-wrap: wrap
+
+  &__col
+    padding 20px 0 16px 0
+    border-bottom: 1px solid #7b868c
+
+    @media desktop
+      border-bottom none
+      width 25%
+
+    &.active
+      .linkLists__colTitle:after
+        transform: rotate(-90deg)
+
+  &__colTitle
+    margin-bottom 0
+    text-transform: uppercase
+    univers-ultra-condensed()
+    font-size 1.8rem
+    text-align: left
+    position relative
+
+    &:after
+      content ''
+      background: url(../images/arrow-footerToggle.png) no-repeat
+      background-size: 28.5px 12.5px
+      width 28.5px
+      height 12.5px
+      display block
+      position absolute
+      top 7px
+      right 0
+      transition: .25s
+
+      @media desktop
+        display none
+
+  &__list
+    margin 0
+    padding 0
+    univers-roman()
+    font-size 1.5rem
+    line-height 2.5rem
+    text-align: left
+    list-style: none
+
+    a
+      color white
+
+.links
+  list-style: none
+  margin 0 0 50px 0
+  padding 0
+  univers-roman()
+  font-size 1.5rem
+  text-align: left
+  display flex
+  flex-wrap: wrap
+
+  @media desktop
+    align-items: center
+    justify-content: center
+
+  li
+    width 50%
+
+    @media desktop
+      width: auto
+      padding 0 15px
+      border-right 1px solid gray
+
+      &:last-of-type
+        padding-right 0
+        border-right: 0
+
+    a
+      @media desktop
+        &:hover
+          text-decoration: underline
+
+.siteFooter__legal
+  color #636363
+  univers-roman()
+  font-size 1.3rem
+  line-height 2.3rem
+

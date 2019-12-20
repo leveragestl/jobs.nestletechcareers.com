@@ -1,0 +1,196 @@
+tablet-small = "only screen and (min-width: 480px)"
+tablet = "only screen and (min-width: 600px)"
+tablet-large = "only screen and (min-width: 768px)"
+desktop = "only screen and (min-width: 960px)"
+wide = "only screen and (min-width: 1200px)"
+
+/*
+* Hide visually and from screen readers
+*/
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
+}
+
+/*
+* Extends the .visuallyhidden class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  clip-path: none;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+//––
+// CONTRAINTS
+//––––––––––––––––––––––––––––––
+.mxw-960 {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.mxw-700 {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+
+
+//––
+// SPACE
+//––––––––––––––––––––––––––––––
+.inner-space {
+	padding: 0 25px 50px;
+}
+
+.room-sides {
+	padding: 0 25px;
+}
+
+.nopad {
+	padding: 0;
+}
+
+.bottom-space {
+	padding-bottom: 40px;
+}
+
+
+
+//––
+// STYLE RESETS
+//––––––––––––––––––––––––––––––
+.center-text {
+	text-align: center;
+}
+
+.no-border {
+	border: 0;
+}
+
+
+.hide-mobile {
+	display: none;
+}
+
+
+.parent {
+	.title {
+		color: #231f20;
+		margin-bottom: 30px;
+	}
+
+	.subtitle {
+		color: #494a49;
+		font-size: 22px;
+	}
+
+	.content {
+		color: #494a49;
+		line-height: 24px;
+	}
+}
+
+.boxlink {
+	display: block;
+	height: 100%;
+}
+
+.rel {
+	position: relative;
+}
+
+.seo
+	position: absolute
+	text-indent: -9999px; outline: none;
+
+.mobile-break
+
+	@media tablet
+		display: none
+
+
+cover() {
+	background-position: top center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+flex-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+box() {
+	border: 2px solid $white;
+	display: block;
+	width: 50px;
+	height: 45px;
+	margin: 0 auto;
+	text-align: center;
+	color: $white;
+	font-size: 25px;
+	line-height: 50px;
+}

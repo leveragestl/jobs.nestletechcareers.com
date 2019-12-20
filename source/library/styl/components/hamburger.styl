@@ -1,0 +1,75 @@
+.hamburger
+  background: none;
+  border: none;
+  height 95px
+  padding 0 13px
+  display: inline-block;
+  transition-property: opacity, filter, top;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  overflow: visible;
+  z-index: 999999;
+  position: fixed
+  top: 0
+  left: 0;
+
+  @media desktop
+    cursor: pointer;
+    left 30px
+
+  &:focus
+    outline: none;
+
+  &.is-active
+
+    .hamburger-inner,
+    .hamburger-inner::after
+      width 44px
+
+.hamburger-box
+  width: 44px;
+  height: 17px;
+  display: inline-block;
+  position: relative;
+
+.hamburger-inner
+  display: block;
+  top: 47%;
+  margin-top: -2px;
+
+.hamburger-inner,
+.hamburger-inner::after
+  width: 44px;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+
+.hamburger-inner::after
+  content: "";
+  display: block;
+
+.hamburger-inner::after
+  bottom: -10px;
+
+/* Spin Animation */
+.hamburger--spin .hamburger-inner
+  transition-duration: 0.22s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+
+.hamburger--spin .hamburger-inner::after
+  transition: bottom 0.1s 0.25s ease-in,
+    transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+
+.hamburger--spin.is-active .hamburger-inner
+  transform: rotate(225deg);
+  transition-delay: 0.12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+.hamburger--spin.is-active .hamburger-inner::after
+  bottom: 0;
+  transform: rotate(-90deg);
+  transition: bottom 0.1s ease-out,
+  transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);

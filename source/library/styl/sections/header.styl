@@ -1,0 +1,117 @@
+.siteHeader
+  background: blue
+  width 100%
+  height: 95px
+  position fixed
+  top 0
+  z-index 99999
+
+  &.animationComplete
+    transition .5s
+    transition-delay: 0s
+
+  @media desktop
+    width 475px
+    height 108px;
+    transition: .5s
+
+  &:before
+    content: '';
+    background: #485cc7;
+    transform: skewY(-2.5deg);
+    transform-origin: 100% 0;
+    position: absolute;
+    right: -12px;
+    left: -12px;
+    top: -315px;
+    height: 410px;
+    transition transform .25s .3s, top .5s cubic-bezier(.67,.02,.27,.95) .3s, height .5s cubic-bezier(.67,.02,.27,.95) .3s
+
+    @media desktop
+      width: 150px;
+      height: 100%
+      background: blue
+      display block
+      transform: none
+      right -40px
+      top auto
+      left auto
+      transform: skew(-20deg);
+
+  &:after
+    @media desktop
+      content: '';
+      width: 100%;
+      height: 200px
+      background: blue
+      display block
+      position absolute
+      left 0
+      bottom -31px
+      transform: skewY(-7.5deg);
+
+    @media only screen and (min-width: 1450px)
+      height 400px
+
+  &__logo
+    background: url(../images/logo.png) no-repeat
+    background-size: 185px 51px
+    width: 185px
+    height: 51px
+    position absolute
+    top: 25px
+    left: 72px
+    text-indent: -9999px; outline: none;
+    z-index 999999
+
+    @media desktop
+      left 120px
+
+.headerCallouts
+  display none
+
+  @media desktop
+    display block
+    position fixed
+    top 40px
+    right 20px
+    z-index: 999999
+
+  @media only screen and (min-width: 1100px)
+    right 50px
+
+  &__button
+    letter-spacing: 3px
+
+    &--search
+      margin-left 5px
+      border 1px solid black
+
+      &:hover
+        border 1px solid blue
+
+.navOpen
+  .siteHeader
+
+    @media desktop
+      width 100vw
+      height 70vh
+
+    @media only screen and (min-width: 1450px)
+      height 60vh
+
+    &:before
+      height 100vh
+      transform: skewY(0deg);
+      top 0
+      transition transform .25s, top .5s cubic-bezier(.67,.02,.27,.95), height .5s cubic-bezier(.67,.02,.27,.95) .25s
+
+      @media desktop
+        height 100%
+
+    &:after
+      @media desktop
+        bottom -100px
+
+      @media only screen and (min-width: 1450px)
+        bottom -200px

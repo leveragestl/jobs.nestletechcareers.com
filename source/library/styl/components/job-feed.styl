@@ -1,0 +1,136 @@
+@media desktop
+  .job-feed-section {
+    color gray
+    background: $white;
+    padding: 75px 0 145px 0;
+    univers-roman()
+    font-size: 1.5rem
+    line-height: 100%
+
+    .inner {
+      width: 95%;
+      margin: 0 auto;
+    }
+
+    .pager {
+      margin: 0;
+      font-size: 18px;
+      text-align: center;
+      display: block;
+      univers-ultra-condensed()
+
+      span,a {
+        display: inline-block;
+      }
+
+      .pager_counts {
+        univers-ultra-condensed()
+        font-size 3.2rem
+        line-height 100%
+        text-transform: uppercase
+      }
+
+      .pager-info {
+        display: block;
+      }
+
+      .pager-prev-arrow,.pager-next-arrow,.current,a {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        font-size: 2rem
+        line-height: 3rem
+
+        /*&.disabled {
+          background: #eee;
+        }*/
+      }
+
+      .pager-next,.pager-prev {
+        color: white;
+        background: link-color;
+        width: 90px;
+        height: 45px;
+        padding: 0 15px;
+        line-height: 45px;
+        display: inline-block;
+        transition: .25s;
+        text-transform: uppercase
+        text-align: center
+
+        &:hover {
+          color: white;
+          background: link-hover;
+        }
+      }
+
+      .pager-next {
+        margin-left: 20px;
+      }
+
+      .pager-prev {
+        margin-right: 20px;
+      }
+    }
+
+    .job-list {
+      width: 100%;
+      max-width: 960px;
+      margin: 80px auto;
+    }
+
+    th {
+      text-align: center;
+      font-size: 15px;
+    }
+
+    td {
+      padding: 10px 5px;
+      font-size: 14px;
+      border-bottom: 1px solid #d7d4ca;
+
+      &.colcity,&.colstate {
+        text-align: center;
+      }
+    }
+
+    td.job-filter {
+      /*background: $cream;*/
+      padding-bottom: 30px;
+
+      input {
+        width: 100%;
+        margin: 0 auto;
+        padding: 4px;
+        display: block;
+        border: 1px solid #d7d4ca;
+        transition: .2s;
+
+        &:focus,&:hover {
+          outline: none;
+        }
+      }
+    }
+
+    .jobFilterSearch {
+      color: white;
+      background: link-color;
+      width: 100%;
+      margin-bottom: 5px;
+      padding: 5px 10px;
+      border: none;
+      display: block;
+      text-align: center;
+      transition: .25s;
+
+      &:hover {
+        background: link-hover;
+      }
+    }
+
+    .jobFilterReset {
+      text-align: center;
+      display: block;
+    }
+  }
+

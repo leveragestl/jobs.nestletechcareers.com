@@ -1,0 +1,335 @@
+/* HTML/BODY */
+html,
+body
+  -webkit-overflow-scrolling: touch;
+  color: text;
+  background: white
+
+html
+  font-size: 10px;
+  line-height: 1.6rem;
+
+body
+  color: text;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  font-family: sans-serif;
+  padding-top 95px
+
+  @media desktop
+    padding-top 0
+    font-size 2.1rem
+    line-height: 3.2rem
+
+  &.navOpen
+    overflow: hidden;
+
+.pageWrap
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+*,
+*:before,
+*:after
+  box-sizing: border-box;
+
+::selection
+  color: white;
+  background: link-color;
+  text-shadow: none;
+
+/* Link colors */
+a
+  color link-color
+  text-decoration: none;
+
+  &:hover, a:focus
+    color link-hover
+
+/* Content elements */
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6
+  margin: 0;
+
+  &.center
+    text-align: center;
+
+h1,
+.h1 {
+}
+
+h2,
+.h2 {
+}
+
+h3,
+.h3 {
+}
+
+h4,
+.h4 {
+}
+
+h5,
+.h5 {
+}
+
+h6,
+.h6 {
+}
+
+p {
+  margin: 0 0 35px 0;
+
+  b,
+  strong {
+  }
+
+  i,
+  em {
+    font-style: italic;
+  }
+
+  &.right {
+    text-align: right;
+  }
+
+  &.left {
+    text-align: left;
+  }
+
+  &.center {
+    text-align: center;
+  }
+
+  &:last-of-type {
+    // margin-bottom: 0;
+  }
+}
+
+ul,
+ol {
+  padding: 0 0 0 20px;
+  margin: 0 0 25px 40px;
+
+  li {
+  }
+}
+
+blockquote {
+  width: 100%;
+  margin: 0;
+
+  p {
+  }
+}
+
+hr {
+  background-color: black;
+  height: 3px;
+  margin: 75px auto;
+  display: block;
+  border: 0;
+}
+
+/* Media Elements */
+/*
+    * Remove the gap between audio, canvas, iframes,
+    * images, videos and the bottom of their containers:
+    * https://github.com/h5bp/html5-boilerplate/issues/440
+    */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+object {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  display: block;
+
+  &.right {
+    margin: 0 0 20px 20px;
+    float: right;
+  }
+}
+
+.videoWrap {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*
+    * Remove default fieldset styles.
+    */
+
+/* Form Elements */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Browser Upgrade Prompt */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+
+/* Print */
+@media print {
+  *,
+  *:before,
+  *:after,
+  p:first-letter,
+  div:first-letter,
+  blockquote:first-letter,
+  li:first-letter,
+  p:first-line,
+  div:first-line,
+  blockquote:first-line,
+  li:first-line {
+    background: transparent !important;
+    color: #000 !important; /* Black prints faster:
+      http://www.sanbeiji.com/archives/953 */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+    * Don't show links that are fragment identifiers,
+    * or use the `javascript:` pseudo protocol
+    */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+    * Printing Tables:
+    * http://css-discuss.incutio.com/wiki/Printing_Tables
+    */
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	clip-path: none;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}

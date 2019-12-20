@@ -1,0 +1,60 @@
+.button
+  color white
+  background: link-color
+  width auto
+  max-width 290px
+  padding: 10px 20px 6px 20px
+  font-size 1.8rem
+  text-transform: uppercase
+  text-align: center
+  display inline-block
+  transition: .25s;
+  univers-ultra-condensed()
+
+  &:before
+    display none
+
+  // @media tablet
+  //   position relative
+  //   left: 50%;
+  //   transform translateX(-50%)
+
+  &--manualCenter
+    position relative
+    left 50%
+    transform translateX(-50%)
+
+  &--box
+    color white
+    background: black
+
+    @media desktop
+      &:hover
+        background-color: blue
+
+  &--search
+    &:before
+      content ''
+      background: url(../images/icon-search.png) no-repeat
+      background-size: 15px 19.5px
+      width 15px
+      height 19.5px
+      display inline-block
+      margin-right 8px
+      transform: translateY(3px)
+
+  @media desktop
+    &:hover
+      color white
+      background-color: blue
+
+  &--outline
+    color link-color
+    background white
+    padding: 15px 40px 10px 40px
+    border: 2px solid link-color
+
+    @media desktop
+      &:hover
+        color white
+        background: link-color
