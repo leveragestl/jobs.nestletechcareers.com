@@ -2,7 +2,7 @@
   width 100vw
   height calc(100vh - 95px)
   margin-top 95px
-  padding: 25px 10px 50px 10px
+  padding: 25px 10px 150px 10px
   position fixed
   top 0
   left 0
@@ -11,13 +11,20 @@
   opacity 0
   transition: .5s cubic-bezier(.67,.02,.27,.95) 0s
   overflow auto
+  -ms-overflow-style: none
+
+  &::-webkit-scrollbar
+    display: none
 
   @media desktop
+    width 500px
     opacity 1
-    padding: 25px 0 50px 0
+    padding: 70px 0 200px 0
     transition: 0s
+    transform: translateX(-500px)
 
 .mainNav
+
   &__list
     margin 0
     padding 0
@@ -34,6 +41,9 @@
     univers-ultra-condensed()
     letter-spacing: 1px
 
+    @media desktop
+      margin-bottom 40px
+
   &__listLink
     color white
 
@@ -41,7 +51,10 @@
       transition: .25s
 
       &:hover
-        color black
+        color #90b8ff
+
+    &.activePage
+      color #90b8ff
 
   &__animated
     opacity 0
@@ -83,12 +96,10 @@
   &__subListItem
     margin-bottom 10px
     padding-left 25px
-    text-transform: none
     univers()
     font-size 1.7rem
     line-height 1.7rem
     position relative
-    text-transform: uppercase
 
     &:before
       content ''
@@ -106,11 +117,143 @@
 
     @media desktop
       &:hover
-        color black
+        color #90b8ff
+
+
+.extraNavs
+  @media desktop
+    display flex
+    align-items: flex-end
+    margin-top 100px
 
 .utilityNav
+  margin 50px 0
+
   @media desktop
-    display none
+    width 60%
+    margin 0
+    padding-left 120px
+
+  &__list
+    margin 0
+    padding 0
+    list-style: none
+
+  &__listItem
+    margin 0 0 5px 0
+    display block
+
+    @media desktop
+      display none
+      margin-bottom 0
+
+      &:last-of-type
+        display block
+        font-size 1.7rem
+
+      &:hover a
+        color: #90b8ff
+        border-color: #90b8ff
+
+    &:last-child
+      margin-top 30px
+
+  &__listLink
+    display block
+
+    &--trackApplication
+      color white
+      display inline-block
+      line-height 2.2rem
+      border-bottom 1px solid white
+
+    &--openTNF
+      background: none
+      color white
+      border-color white
+
+// Social Nav
+.socialNav
+
+  @media desktop
+    width 40%
+
+  &__title
+    color white
+    margin-bottom 15px
+    univers-ultra-condensed()
+    font-size 3.2rem
+    text-transform: uppercase
+    display block
+
+    @media desktop
+      color white
+      margin-bottom 20px
+      text-align: right
+
+  &__list
+    display flex
+    margin 0
+    padding 0
+
+    @media desktop
+      padding-right 75px
+      justify-content: flex-end
+      align-items: flex-end
+
+  &__listItem
+    margin 0 10px 0 0
+    display block
+    text-indent: -9999px; outline: none;
+
+    @media desktop
+      margin 0 0 5px 15px
+      transition: .25s
+
+      &:first-child
+        margin-left 0
+
+      &:hover
+        transform: translateY(-2px)
+
+    &--twitter
+      background: url(../images/icon-twitter.png) no-repeat
+      background-size: 16.5px 13.5px
+      width 16.5px
+      height 13.5px
+
+      @media desktop
+        background-size: 16.5px 13.5px
+
+    &--facebook
+      background: url(../images/icon-facebook.png) no-repeat
+      background-size: 7px 14px
+      width 7px
+      height 14px
+
+      @media desktop
+        background-size: 7px 14px
+
+    &--linkedin
+      background: url(../images/icon-linkedin.png) no-repeat
+      background-size: 16px 16.5px
+      width 16px
+      height 16.5px
+
+      @media desktop
+        background-size: 16px 16.5px
+
+    &--youtube
+      background: url(../images/icon-youtube.png) no-repeat
+      background-size: 22.5px 15.5px
+      width 22.5px
+      height 15.5px
+
+      @media desktop
+        background-size: 22.5px 15.5px
+
+  &__listLink
+    display block
 
 // Nav Open
 .navOpen
@@ -118,9 +261,6 @@
     opacity 1
     transform: translateX(0)
     transition: .5s cubic-bezier(.67,.02,.27,.95) .3s,opacity .5s cubic-bezier(.67,.02,.27,.95) .35s
-
-    @media desktop
-      transition: .75s cubic-bezier(.67,.02,.27,.95) .1s,opacity .75s cubic-bezier(.67,.02,.27,.95) .15s
 
   .mainNav
     &__animated

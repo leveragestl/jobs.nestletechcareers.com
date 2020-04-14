@@ -4,7 +4,7 @@
   height 95px
   padding 0 13px
   display: inline-block;
-  transition-property: opacity, filter, top;
+  transition-property: opacity, filter, top, height;
   transition-duration: 0.15s;
   transition-timing-function: linear;
   overflow: visible;
@@ -73,3 +73,14 @@
   transform: rotate(-90deg);
   transition: bottom 0.1s ease-out,
   transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+// Scrolled
+.scrolled
+  .hamburger
+    @media desktop
+      height 80px
+
+.hiringAlertOpen
+  .hamburger
+    @media desktop
+      top 230px

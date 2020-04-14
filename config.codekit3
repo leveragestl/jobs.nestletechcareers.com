@@ -2035,11 +2035,33 @@
 		"opt": 1,
 		"q": 100
 		},
+	"\/source\/library\/images\/icon-facebook--black.png": {
+		"ft": 32768,
+		"iS": 1896,
+		"oA": 0,
+		"oAP": "\/build\/library\/images\/icon-facebook--black.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/source\/library\/images\/icon-facebook.png": {
 		"ft": 32768,
 		"iS": 283,
 		"oA": 0,
 		"oAP": "\/build\/library\/images\/icon-facebook.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/library\/images\/icon-linkedin--black.png": {
+		"ft": 32768,
+		"iS": 2442,
+		"oA": 0,
+		"oAP": "\/build\/library\/images\/icon-linkedin--black.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -2068,11 +2090,33 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/source\/library\/images\/icon-twitter--black.png": {
+		"ft": 32768,
+		"iS": 2953,
+		"oA": 0,
+		"oAP": "\/build\/library\/images\/icon-twitter--black.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/source\/library\/images\/icon-twitter.png": {
 		"ft": 32768,
 		"iS": 1077,
 		"oA": 0,
 		"oAP": "\/build\/library\/images\/icon-twitter.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/library\/images\/icon-youtube--black.png": {
+		"ft": 32768,
+		"iS": 2643,
+		"oA": 0,
+		"oAP": "\/build\/library\/images\/icon-youtube--black.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

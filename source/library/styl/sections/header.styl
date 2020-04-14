@@ -73,8 +73,9 @@
   @media desktop
     display block
     position fixed
-    top 40px
+    top 30px
     right 20px
+    transition: .2s
     z-index: 999999
 
   @media only screen and (min-width: 1100px)
@@ -83,6 +84,10 @@
   &__button
     letter-spacing: 3px
 
+    @media desktop
+      &.animationComplete
+        transform: 0s
+
     &--search
       margin-left 5px
       border 1px solid black
@@ -90,28 +95,69 @@
       &:hover
         border 1px solid blue
 
+    &--outline
+      color black
+      border 1px solid black
+
+.scrolled
+  .siteHeader
+    @media desktop
+      width 100%
+      height 80px
+
+      &:after
+        transform: skewY(0deg);
+        height 0
+
+      &__logo
+        top 14px
+
+  .headerCallouts
+    @media desktop
+      top 14px
+
+      &__button--outline
+        color white
+        border 1px solid rgba(255,255,255,0)
+        transition: .15s 0s
+
+        &:hover
+          border-color black
+
+      &__button--search
+        background-color: blue
+        border 1px solid rgba(0,0,0,0)
+
+        &:hover
+          background-color: black
+
+  &.navOpen
+    .headerCallouts
+      @media desktop
+        &__button--outline
+          color white
+          background-color: blue
+
 .navOpen
   .siteHeader
 
     @media desktop
-      width 100vw
-      height 70vh
-
-    @media only screen and (min-width: 1450px)
-      height 60vh
+      width 500px
+      height 100vh
 
     &:before
       height 100vh
+      width 100%
       transform: skewY(0deg);
       top 0
+      right 0
+      left: 0
       transition transform .25s, top .5s cubic-bezier(.67,.02,.27,.95), height .5s cubic-bezier(.67,.02,.27,.95) .25s
 
       @media desktop
-        height 100%
+        transform: none
+        height auto
 
     &:after
       @media desktop
-        bottom -100px
-
-      @media only screen and (min-width: 1450px)
-        bottom -200px
+        transform: skewY(0deg);
