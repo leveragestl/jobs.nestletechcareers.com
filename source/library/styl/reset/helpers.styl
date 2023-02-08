@@ -12,6 +12,16 @@ wide = "only screen and (min-width: 1200px)"
   display: none !important;
 }
 
+.mobileHidden
+	display: none
+
+	@media desktop
+		display: block
+
+.desktopHidden
+	@media desktop
+		display: none
+
 /*
 * Hide only visually, but have it available for screen readers:
 * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
@@ -184,13 +194,36 @@ flex-center() {
 }
 
 box() {
-	border: 2px solid $white;
+	border: 2px solid white;
 	display: block;
 	width: 50px;
 	height: 45px;
 	margin: 0 auto;
 	text-align: center;
-	color: $white;
+	color: white;
 	font-size: 25px;
 	line-height: 50px;
 }
+
+simple-title() {
+	margin-bottom 30px
+	light()
+	font-size 3.2rem
+	line-height 3.2rem
+	text-align: center
+
+	@media desktop {
+		font-size 4rem
+		line-height 4rem
+		margin-bottom 35px
+	}
+}
+
+shadow()
+	box-shadow: 0px 3px 4px rgba(0,0,0,.25);
+
+.author
+	display block
+
+	&__name
+		univers-bold()

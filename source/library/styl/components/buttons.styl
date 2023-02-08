@@ -1,38 +1,78 @@
-.button
+.button,.sf_applybtn,.pager-prev,.pager-next,.jobFilterSearch
   color white
-  background: link-color
-  width auto
-  max-width 290px
-  padding: 10px 20px 6px 20px
-  font-size 1.8rem
-  text-transform: uppercase
-  text-align: center
   display inline-block
+  padding: 8px 25px
+  position relative
+  z-index 2
+  book()
+  font-size 1.7rem
+  text-align: center
   transition: .25s;
-  univers-ultra-condensed()
+  border-radius: 5px
+  box-shadow: 0px 3px 4px rgba(0,0,0,.25);
 
-  &:before
-    display none
+  &--center
+    left 50%
+    transform: translateX(-50%)
 
-  // @media tablet
-  //   position relative
-  //   left: 50%;
-  //   transform translateX(-50%)
+  @media desktop
+    transition color .25s
+
+    &:before
+      transition: height .25s, width .25s .15s
+
+    &:hover
+      color white
+
+      &:before
+        height 100%
+        width 100%
+
+  &--box
+    color white
+    background: link-color
+    width auto
+
+    @media desktop
+
+      &:hover
+        background-color: link-hover
+
+    &:before
+      display none
 
   &--manualCenter
     position relative
     left 50%
     transform translateX(-50%)
 
-  &--box
-    color white
-    background: black
+  &--outline
+    color link-color
+    background: none
+    border 1px solid link-color
 
     @media desktop
       &:hover
-        background-color: blue
+        background: link-color
+        border 1px solid rgba(link-color,0)
+
+    &:before
+      display none
 
   &--search
+    color white
+    background: link-color
+
+    @media desktop
+
+      &:hover
+        background: link-hover
+
+        &:before
+          background-size: 15px 19.5px
+          width 15px
+          height 19.5px
+
     &:before
       content ''
       background: url(../images/icon-search.png) no-repeat
@@ -42,19 +82,71 @@
       display inline-block
       margin-right 8px
       transform: translateY(3px)
+      z-index 1
+      position relative
+      top 0
+      left 0
 
-  @media desktop
-    &:hover
-      color white
-      background-color: blue
+  &__cta
+    color light-brown
 
-  &--outline
-    color link-color
+    &--inspiration
+      display block
+      margin-bottom 5px
+      font-size: 2rem;
+
+  &--white
+    color white
+    border-color white
+
+  &--solidWhite
+    color blue
     background white
-    padding: 15px 40px 10px 40px
-    border: 2px solid link-color
+    border-color white
 
     @media desktop
       &:hover
         color white
-        background: link-color
+        background link-hover
+        border-color link-hover
+
+  &--arrow
+    background none
+    box-shadow: none
+    color link-color
+    font-size 1.6rem
+    text-transform: uppercase
+
+    @media desktop
+      &:hover
+        color link-hover
+
+        &:after
+          transform: translateX(5px)
+
+    &:after
+      content ''
+      background url(../images/arrow-right-text-link-blue.png) no-repeat
+      background-size: 15px 15.5px
+      width: 15px
+      height 15.5px
+      display inline-block
+      margin-left 8px
+
+      @media desktop
+        transition: .5s cubic-bezier(.77,.01,.18,1)
+
+  &.animationComplete
+    transition: .25s
+    transition-delay: 0s
+
+
+
+
+
+
+
+
+
+
+

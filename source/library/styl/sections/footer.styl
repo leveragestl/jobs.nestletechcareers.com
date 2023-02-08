@@ -1,13 +1,13 @@
 .siteFooter
-  color white
-  background: black
+  color darkBrown
+  background: tan
   padding 90px 0 50px 0
 
   a
-    color white
+    color darkBrown
 
   @media desktop
-    padding 185px 0 50px 0
+    padding 90px 0 150px 0
 
   &--inner
     padding: 0 10px
@@ -15,15 +15,21 @@
 
   &__title
     margin-bottom 22px
-    univers-ultra-condensed()
+    light()
     font-size 3.2rem
-    text-transform: uppercase
+
+    @media desktop
+      font-size 4rem
 
   &__tagline
-    margin-bottom 10px
-    univers-oblique()
+    margin-bottom 15px
+    light()
     line-height 2.2rem
     font-size 1.7rem
+
+    @media desktop
+      font-size 2rem
+      line-height 2.5rem
 
   &__socialList
     margin 0 0 53px 0
@@ -34,33 +40,33 @@
     justify-content: center
 
   &__socialListItem
-    margin 0 10px
+    margin 0 25px
     display block
     text-indent: -9999px; outline: none;
 
     &--twitter
-      background: url(../images/icon-twitter.png) no-repeat
-      background-size: 31px 24.5px
-      width 31px
-      height 24.5px
+      background: url(../images/icon-twitter-brown.png) no-repeat
+      background-size: 38.5px 30.5px
+      width 38.5px
+      height 30.5px
 
     &--facebook
-      background: url(../images/icon-facebook.png) no-repeat
-      background-size: 13.5px 27.5px
-      width 13.5px
-      height 27.5px
+      background: url(../images/icon-facebook-brown.png) no-repeat
+      background-size: 16.5px 34.5px
+      width 16.5px
+      height 34.5px
 
     &--linkedin
-      background: url(../images/icon-linkedin.png) no-repeat
-      background-size: 28.5px 26.5px
-      width 28.5px
-      height 26.5px
+      background: url(../images/icon-linkedin-brown.png) no-repeat
+      background-size: 35.5px 33.55px
+      width 35.5px
+      height 33.55px
 
     &--youtube
-      background: url(../images/icon-youtube.png) no-repeat
-      background-size: 38px 26.5px
-      width 38px
-      height 26.5px
+      background: url(../images/icon-youtube-brown.png) no-repeat
+      background-size: 47.5px 33.5px
+      width 47.5px
+      height 33.5px
 
   &__socialListLink
     width 100%
@@ -69,7 +75,7 @@
 
 .linkLists
   margin-bottom 60px
-  border-top: 1px solid #7b868c
+  border-top: 1px solid brown
 
   @media desktop
     width 960px
@@ -80,7 +86,7 @@
 
   &__col
     padding 20px 0 16px 0
-    border-bottom: 1px solid #7b868c
+    border-bottom: 1px solid brown
 
     @media desktop
       border-bottom none
@@ -91,16 +97,16 @@
         transform: rotate(-90deg)
 
   &__colTitle
-    margin-bottom 0
-    text-transform: uppercase
-    univers-ultra-condensed()
+    margin-bottom 10px
+    book()
+    letter-spacing: .075rem
     font-size 1.8rem
     text-align: left
     position relative
 
     &:after
       content ''
-      background: url(../images/arrow-footerToggle.png) no-repeat
+      background: url(../images/arrow-footerToggle-brown.png) no-repeat
       background-size: 28.5px 12.5px
       width 28.5px
       height 12.5px
@@ -116,20 +122,24 @@
   &__list
     margin 0
     padding 0
-    univers-roman()
-    font-size 1.5rem
+    bold()
+    font-size 1.4rem
     line-height 2.5rem
     text-align: left
     list-style: none
 
     a
-      color white
+      color darkBrown
+
+      @media desktop
+        &:hover
+          text-decoration: underline
 
 .links
   list-style: none
   margin 0 0 50px 0
   padding 0
-  univers-roman()
+  bold()
   font-size 1.5rem
   text-align: left
   display flex
@@ -145,7 +155,7 @@
     @media desktop
       width: auto
       padding 0 15px
-      border-right 1px solid gray
+      border-right 1px solid darkBrown
 
       &:last-of-type
         padding-right 0
@@ -157,8 +167,13 @@
           text-decoration: underline
 
 .siteFooter__legal
-  color #636363
-  univers-roman()
+  color darkBrown
+  book()
   font-size 1.3rem
   line-height 2.3rem
+
+  @media desktop
+    font-size 1.5rem
+    width 750px
+    margin 0 auto
 

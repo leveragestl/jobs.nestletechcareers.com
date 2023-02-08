@@ -41,7 +41,7 @@
 .hamburger-inner::after
   width: 44px;
   height: 4px;
-  background-color: white;
+  background-color: #64513d;
   position: absolute;
   transition-property: transform;
   transition-duration: 0.15s;
@@ -74,13 +74,14 @@
   transition: bottom 0.1s ease-out,
   transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 
-// Scrolled
-.scrolled
-  .hamburger
-    @media desktop
-      height 80px
-
 .hiringAlertOpen
   .hamburger
     @media desktop
       top 230px
+
+.navOpen
+  .hamburger-inner,
+  .hamburger-inner::after
+    width: 44px;
+    height: 4px;
+    background-color: white;

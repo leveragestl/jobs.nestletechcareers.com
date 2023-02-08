@@ -1,9 +1,7 @@
 @media desktop
   .job-feed-section {
-    color gray
-    background: $white;
-    padding: 225px 0 145px 0;
-    univers-roman()
+    background: white;
+    padding: 145px 0;
     font-size: 1.5rem
     line-height: 100%
 
@@ -17,17 +15,15 @@
       font-size: 18px;
       text-align: center;
       display: block;
-      univers-ultra-condensed()
 
       span,a {
         display: inline-block;
       }
 
       .pager_counts {
-        univers-ultra-condensed()
-        font-size 3.2rem
+        bold()
+        font-size 2.2rem
         line-height 100%
-        text-transform: uppercase
       }
 
       .pager-info {
@@ -38,8 +34,9 @@
         width: 30px;
         height: 30px;
         display: inline-block;
-        font-size: 2rem
+        font-size: 1.4rem
         line-height: 3rem
+        bold()
 
         /*&.disabled {
           background: #eee;
@@ -55,8 +52,9 @@
         line-height: 45px;
         display: inline-block;
         transition: .25s;
-        text-transform: uppercase
         text-align: center
+        bold()
+        font-size: 1.4rem
 
         &:hover {
           color: white;
@@ -82,6 +80,7 @@
     th {
       text-align: center;
       font-size: 15px;
+      bold()
     }
 
     td {
@@ -117,6 +116,7 @@
       background: link-color;
       width: 100%;
       margin-bottom: 5px;
+      font-size 1.3rem
       padding: 5px 10px;
       border: none;
       display: block;

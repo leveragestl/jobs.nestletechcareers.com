@@ -1,7 +1,7 @@
 .siteHeader
-  background: blue
+  background: white
   width 100%
-  height: 95px
+  height: 100px
   position fixed
   top 0
   z-index 99999
@@ -11,47 +11,7 @@
     transition-delay: 0s
 
   @media desktop
-    width 475px
-    height 108px;
     transition: .5s
-
-  &:before
-    content: '';
-    background: #485cc7;
-    transform: skewY(-2.5deg);
-    transform-origin: 100% 0;
-    position: absolute;
-    right: -12px;
-    left: -12px;
-    top: -315px;
-    height: 410px;
-    transition transform .25s .3s, top .5s cubic-bezier(.67,.02,.27,.95) .3s, height .5s cubic-bezier(.67,.02,.27,.95) .3s
-
-    @media desktop
-      width: 150px;
-      height: 100%
-      background: blue
-      display block
-      transform: none
-      right -40px
-      top auto
-      left auto
-      transform: skew(-20deg);
-
-  &:after
-    @media desktop
-      content: '';
-      width: 100%;
-      height: 200px
-      background: blue
-      display block
-      position absolute
-      left 0
-      bottom -31px
-      transform: skewY(-7.5deg);
-
-    @media only screen and (min-width: 1450px)
-      height 400px
 
   &__logo
     background: url(../images/logo.png) no-repeat
@@ -73,7 +33,7 @@
   @media desktop
     display block
     position fixed
-    top 30px
+    top 24px
     right 20px
     transition: .2s
     z-index: 999999
@@ -82,7 +42,6 @@
     right 50px
 
   &__button
-    letter-spacing: 3px
 
     @media desktop
       &.animationComplete
@@ -90,56 +49,32 @@
 
     &--search
       margin-left 5px
-      border 1px solid black
 
       &:hover
-        border 1px solid blue
+        background: link-hover
 
     &--outline
-      color black
-      border 1px solid black
+      color link-color
+      border 1px solid link-color
 
 .scrolled
   .siteHeader
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+
     @media desktop
       width 100%
-      height 80px
 
       &:after
         transform: skewY(0deg);
         height 0
 
-      &__logo
-        top 14px
-
-  .headerCallouts
-    @media desktop
-      top 14px
-
-      &__button--outline
-        color white
-        border 1px solid rgba(255,255,255,0)
-        transition: .15s 0s
-
-        &:hover
-          border-color black
-
-      &__button--search
-        background-color: blue
-        border 1px solid rgba(0,0,0,0)
-
-        &:hover
-          background-color: black
-
-  &.navOpen
-    .headerCallouts
-      @media desktop
-        &__button--outline
-          color white
-          background-color: blue
-
 .navOpen
   .siteHeader
+    background blue
+
+    &__logo
+      background url(../images/logo-white.png) no-repeat
+      background-size: 185px 51px
 
     @media desktop
       width 500px

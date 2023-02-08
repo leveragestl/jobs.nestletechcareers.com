@@ -1,9 +1,133 @@
-/* BASE */
-  @keyframes nameHere {
-    0% {
-      
-    }
-    100% {
-      
-    }
-  }
+.animateOnLoad
+  opacity 0
+  transform: translate(0, -10px)
+  transition: .7s cubic-bezier(.67,.02,.27,.95)
+
+  &--ltr
+    transform: translate(-30px, 0)
+
+  &--rtl
+    transform: translate(30px, 0)
+
+  &--down
+    transform: translate(0, -10px)
+
+  &--up
+    transform: translate(0, 10px)
+
+  &--opaque
+    opacity 1
+
+  &.inView
+    opacity 1
+    transform: translate(0, 0)
+
+.animateManual
+  transition: .7s cubic-bezier(.67,.02,.27,.95)
+
+[data-animate-delay="50"].animateOnLoad,[data-animate-delay="50"].animateManual
+  transition-delay: 50ms
+
+[data-animate-delay="100"].animateOnLoad,[data-animate-delay="100"].animateManual
+  transition-delay: 100ms
+
+[data-animate-delay="150"].animateOnLoad,[data-animate-delay="150"].animateManual
+  transition-delay: 150ms
+
+[data-animate-delay="200"].animateOnLoad,[data-animate-delay="200"].animateManual
+  transition-delay: 200ms
+
+[data-animate-delay="250"].animateOnLoad,[data-animate-delay="250"].animateManual
+  transition-delay: 250ms
+
+[data-animate-delay="300"].animateOnLoad,[data-animate-delay="300"].animateManual
+  transition-delay: 300ms
+
+[data-animate-delay="350"].animateOnLoad,[data-animate-delay="350"].animateManual
+  transition-delay: 350ms
+
+[data-animate-delay="400"].animateOnLoad,[data-animate-delay="400"].animateManual
+  transition-delay: 400ms
+
+[data-animate-delay="450"].animateOnLoad,[data-animate-delay="450"].animateManual
+  transition-delay: 450ms
+
+[data-animate-delay="500"].animateOnLoad,[data-animate-delay="500"].animateManual
+  transition-delay: 500ms
+
+[data-animate-delay="550"].animateOnLoad,[data-animate-delay="550"].animateManual
+  transition-delay: 550ms
+
+[data-animate-delay="600"].animateOnLoad,[data-animate-delay="600"].animateManual
+  transition-delay: 600ms
+
+[data-animate-delay="650"].animateOnLoad,[data-animate-delay="650"].animateManual
+  transition-delay: 650ms
+
+[data-animate-delay="700"].animateOnLoad,[data-animate-delay="700"].animateManual
+  transition-delay: 700ms
+
+[data-animate-delay="750"].animateOnLoad,[data-animate-delay="750"].animateManual
+  transition-delay: 750ms
+
+[data-animate-delay="800"].animateOnLoad,[data-animate-delay="800"].animateManual
+  transition-delay: 800ms
+
+[data-animate-delay="850"].animateOnLoad,[data-animate-delay="850"].animateManual
+  transition-delay: 850ms
+
+[data-animate-delay="900"].animateOnLoad,[data-animate-delay="900"].animateManual
+  transition-delay: 900ms
+
+[data-animate-delay="950"].animateOnLoad,[data-animate-delay="950"].animateManual
+  transition-delay: 950ms
+
+[data-animate-delay="1000"].animateOnLoad,[data-animate-delay="1000"].animateManual
+  transition-delay: 1000ms
+
+[data-animate-delay="1100"].animateOnLoad,[data-animate-delay="1100"].animateManual
+  transition-delay: 1100ms
+
+[data-animate-delay="1200"].animateOnLoad,[data-animate-delay="1200"].animateManual
+  transition-delay: 1200ms
+
+[data-animate-delay="1300"].animateOnLoad,[data-animate-delay="1300"].animateManual
+  transition-delay: 1300ms
+
+[data-animate-delay="1400"].animateOnLoad,[data-animate-delay="1400"].animateManual
+  transition-delay: 1400ms
+
+[data-animate-delay="1500"].animateOnLoad,[data-animate-delay="1500"].animateManual
+  transition-delay: 1500ms
+
+[data-animate-delay="2000"].animateOnLoad,[data-animate-delay="2000"].animateManual
+  transition-delay: 2000ms
+
+
+@keyframes bounce
+  0%
+    bottom: 17px;
+
+  5%
+    bottom: 24px;
+
+  10%
+    bottom: 12px;
+
+  12.5%
+    bottom: 17px;
+
+  100%
+    bottom: 17px;
+
+@keyframes ripple
+  0%
+    opacity: 0;
+    transform: scale3d(.5, .5, .5);
+
+  50%
+    opacity: .75;
+
+  100%
+    opacity: 0;
+    transform: scale3d(1.3, 1.3, 1.3)

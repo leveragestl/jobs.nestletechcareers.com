@@ -1,4 +1,5 @@
 .navDrawer
+  background blue
   width 100vw
   height calc(100vh - 95px)
   margin-top 95px
@@ -8,8 +9,6 @@
   left 0
   z-index 99999
   transform: translateX(100vw)
-  opacity 0
-  transition: .5s cubic-bezier(.67,.02,.27,.95) 0s
   overflow auto
   -ms-overflow-style: none
 
@@ -35,11 +34,8 @@
 
   &__listItem
     margin-bottom 30px
-    font-size 3.2rem
-    line-height 2.7rem
-    text-transform: uppercase
-    univers-ultra-condensed()
-    letter-spacing: 1px
+    font-size 2.5rem
+    line-height 3.5rem
 
     @media desktop
       margin-bottom 40px
@@ -51,10 +47,10 @@
       transition: .25s
 
       &:hover
-        color #90b8ff
+        color #00f8ff
 
     &.activePage
-      color #90b8ff
+      color #00f8ff
 
   &__animated
     opacity 0
@@ -89,35 +85,24 @@
       transition-delay: .45s
 
   &__subList
-    margin 10px 0 0 0
+    color white
+    margin 10px 0 0 35px
     padding 0
-    list-style: none
+    list-style: disc
 
   &__subListItem
-    margin-bottom 10px
-    padding-left 25px
-    univers()
-    font-size 1.7rem
-    line-height 1.7rem
+    margin-bottom 15px
+    bold()
+    font-size 1.5rem
+    line-height 1.5rem
     position relative
-
-    &:before
-      content ''
-      background: white
-      width 14px
-      height 6px
-      display block
-      position absolute
-      left 0
-      top 50%
-      transform: translateY(-3px)
 
   &__subListLink
     color white
 
     @media desktop
       &:hover
-        color #90b8ff
+        color #00f8ff
 
 
 .extraNavs
@@ -140,7 +125,7 @@
     list-style: none
 
   &__listItem
-    margin 0 0 5px 0
+    margin 0 0 15px 0
     display block
 
     @media desktop
@@ -152,11 +137,19 @@
         font-size 1.7rem
 
       &:hover a
-        color: #90b8ff
-        border-color: #90b8ff
+        color: #00f8ff
+        border-color: #00f8ff
 
     &:last-child
       margin-top 30px
+
+    .open-talent-form,.button--search
+      color blue
+      background white
+
+      &:before
+        background: url(../images/icon-search-blue.png) no-repeat
+        background-size: 15px 19.5px
 
   &__listLink
     display block
@@ -258,7 +251,6 @@
 // Nav Open
 .navOpen
   .navDrawer
-    opacity 1
     transform: translateX(0)
     transition: .5s cubic-bezier(.67,.02,.27,.95) .3s,opacity .5s cubic-bezier(.67,.02,.27,.95) .35s
 

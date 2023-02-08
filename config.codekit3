@@ -1224,6 +1224,167 @@
 		"oAP": "\/build\/landing-page\/index.html",
 		"oF": 0
 		},
+	"\/source\/library\/fonts\/generator_config.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/library\/fonts\/generator_config.txt",
+		"oF": 0
+		},
+	"\/source\/library\/fonts\/nestlebrush-regular-webfont.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/library\/fonts\/nestlebrush-regular-webfont.woff",
+		"oF": 0
+		},
+	"\/source\/library\/fonts\/nestlebrush-regular-webfont.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/library\/fonts\/nestlebrush-regular-webfont.woff2",
+		"oF": 0
+		},
+	"\/source\/library\/fonts\/nestlescriptofficeara-regular-webfont.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/library\/fonts\/nestlescriptofficeara-regular-webfont.woff",
+		"oF": 0
+		},
+	"\/source\/library\/fonts\/nestlescriptofficeara-regular-webfont.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/library\/fonts\/nestlescriptofficeara-regular-webfont.woff2",
+		"oF": 0
+		},
+	"\/source\/library\/fonts\/nestletexttf-bold-webfont.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/library\/fonts\/nestletexttf-bold-webfont.woff",
+		"oF": 0
+		},
+	"\/source\/library\/fonts\/nestletexttf-bold-webfont.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/library\/fonts\/nestletexttf-bold-webfont.woff2",
+		"oF": 0
+		},
+	"\/source\/library\/fonts\/nestletexttf-boldcnd-webfont.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/library\/fonts\/nestletexttf-boldcnd-webfont.woff",
+		"oF": 0
+		},
+	"\/source\/library\/fonts\/nestletexttf-boldcnd-webfont.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/library\/fonts\/nestletexttf-boldcnd-webfont.woff2",
+		"oF": 0
+		},
+	"\/source\/library\/fonts\/nestletexttf-bolditalic-webfont.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/library\/fonts\/nestletexttf-bolditalic-webfont.woff",
+		"oF": 0
+		},
+	"\/source\/library\/fonts\/nestletexttf-bolditalic-webfont.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/library\/fonts\/nestletexttf-bolditalic-webfont.woff2",
+		"oF": 0
+		},
+	"\/source\/library\/fonts\/nestletexttf-book-webfont.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/library\/fonts\/nestletexttf-book-webfont.woff",
+		"oF": 0
+		},
+	"\/source\/library\/fonts\/nestletexttf-book-webfont.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/library\/fonts\/nestletexttf-book-webfont.woff2",
+		"oF": 0
+		},
+	"\/source\/library\/fonts\/nestletexttf-bookcnd-webfont.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/library\/fonts\/nestletexttf-bookcnd-webfont.woff",
+		"oF": 0
+		},
+	"\/source\/library\/fonts\/nestletexttf-bookcnd-webfont.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/library\/fonts\/nestletexttf-bookcnd-webfont.woff2",
+		"oF": 0
+		},
+	"\/source\/library\/fonts\/nestletexttf-italic-webfont.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/library\/fonts\/nestletexttf-italic-webfont.woff",
+		"oF": 0
+		},
+	"\/source\/library\/fonts\/nestletexttf-italic-webfont.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/library\/fonts\/nestletexttf-italic-webfont.woff2",
+		"oF": 0
+		},
+	"\/source\/library\/fonts\/nestletexttf-light-webfont.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/library\/fonts\/nestletexttf-light-webfont.woff",
+		"oF": 0
+		},
+	"\/source\/library\/fonts\/nestletexttf-light-webfont.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/library\/fonts\/nestletexttf-light-webfont.woff2",
+		"oF": 0
+		},
+	"\/source\/library\/fonts\/nestletexttf-lightcnd-webfont.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/library\/fonts\/nestletexttf-lightcnd-webfont.woff",
+		"oF": 0
+		},
+	"\/source\/library\/fonts\/nestletexttf-lightcnd-webfont.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/library\/fonts\/nestletexttf-lightcnd-webfont.woff2",
+		"oF": 0
+		},
+	"\/source\/library\/fonts\/nestletexttf-lightitalic-webfont.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/library\/fonts\/nestletexttf-lightitalic-webfont.woff",
+		"oF": 0
+		},
+	"\/source\/library\/fonts\/nestletexttf-lightitalic-webfont.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/library\/fonts\/nestletexttf-lightitalic-webfont.woff2",
+		"oF": 0
+		},
 	"\/source\/library\/fonts\/univers\/3A9964_0_0.eot": {
 		"cB": 0,
 		"ft": 8192,
@@ -2042,7 +2203,7 @@
 		"oAP": "\/build\/library\/images\/icon-facebook--black.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -2053,7 +2214,7 @@
 		"oAP": "\/build\/library\/images\/icon-facebook.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -2064,7 +2225,7 @@
 		"oAP": "\/build\/library\/images\/icon-linkedin--black.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -2075,7 +2236,7 @@
 		"oAP": "\/build\/library\/images\/icon-linkedin.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -2097,7 +2258,7 @@
 		"oAP": "\/build\/library\/images\/icon-twitter--black.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -2108,7 +2269,7 @@
 		"oAP": "\/build\/library\/images\/icon-twitter.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -2119,7 +2280,7 @@
 		"oAP": "\/build\/library\/images\/icon-youtube--black.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -2130,7 +2291,18 @@
 		"oAP": "\/build\/library\/images\/icon-youtube.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/library\/images\/logo-white.png": {
+		"ft": 32768,
+		"iS": 24338,
+		"oA": 0,
+		"oAP": "\/build\/library\/images\/logo-white.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -2847,6 +3019,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/source\/tnf-forms\/library\/scss\/reset\/_fonts.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/tnf-forms\/library\/scss\/reset\/_fonts.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/source\/tnf-forms\/library\/scss\/reset\/_normalize.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2896,10 +3081,10 @@
 "projectAttributes": {
 	"creationDate": 537084589,
 	"displayValue": "jobs.nestletechcareers.com",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-soon",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 537085934
+	"lastBuiltDate": 621792210
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

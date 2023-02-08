@@ -1,3 +1,40 @@
+.contentSection
+  padding 50px 0
+
+  &--inner
+    padding 0 2.5%
+
+  &__title
+    color lightBrown
+    book()
+    text-align: center
+
+    &--direct
+      bold()
+      margin-bottom 20px
+      font-size 2.2rem
+      display block
+
+    &--fluff
+      color darkBrown
+      font-size 4.5rem
+      line-height 4.5rem
+      display block
+
+      @media desktop
+        font-size 5rem
+        line-height 5rem
+
+.mainContent
+  color darkBrown
+  width: 100vw
+  overflow-x hidden
+  transition: .25s
+
+  p a, li a, blockquote a
+    univers-bold()
+    text-decoration: underline
+
 .talentNetwork
   padding: 50px 0
   border-top 1px solid gray
@@ -11,27 +48,29 @@
     padding: 0 2.5%
 
   &__title
-    color gray
+    book()
+    color darkBrown
     margin-bottom 25px
-    univers-ultra-condensed()
     text-align: center
-    text-transform: uppercase
-    font-size 3rem
+    font-size 5rem
+    line-height 5rem
 
     @media desktop
       margin-bottom 50px
-      font-size 5rem
-      line-height 5rem
 
     &--talentNetwork
       margin-bottom 15px
 
   &__copy
     color black
-    univers-roman()
+    book()
     font-size 1.7rem
     line-height 2.3rem
     text-align: center
 
     @media desktop
       line-height 3.2rem
+
+.navOpen
+  .mainContent
+    opacity .3

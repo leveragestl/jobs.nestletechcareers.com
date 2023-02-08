@@ -1,4 +1,4 @@
-#contactForm_outerDiv {
+#contactForm_outerDiv,#formCtrl_outerDiv {
   margin: 0 !important;
   padding: 0 !important;
 }
@@ -54,9 +54,9 @@
 }
 
 #tn_ja_a_criteria {
-  color:#d57800;
+  color:#0070a7;
   display: block;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'nestle_text_tfbook', sans-serif;
   text-align: center;
 }
 
@@ -66,18 +66,18 @@
 
 #contactForm_cmd0 {
   color: #fff;
-  background: #ff9e1b;
+  background: #007cba;
   width: 200px !important;
   display: block;
   margin: 5px auto;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'nestle_text_tfbook', sans-serif;
   font-size: 22px;
   border: none;
   transition: background .3s;
 
   &:hover {
-    background: #d57800;
+    background: #0070a7;
   }
 }
 
@@ -100,20 +100,6 @@
     z-index: 9999;
     opacity: 1;
     transition: .25s;
-
-    &:before {
-      content: '';
-      background: #485cc7;
-      transform: skewY(-2.5deg);
-      transform-origin: 100% 0;
-      position: absolute;
-      right: -12px;
-      left: -12px;
-      top: -335px;
-      height: 410px; // height and top will usually be the same
-      z-index: 999;
-      -webkit-backface-visibility: hidden; // this fixes an issue with Chrome on some PCs
-    }
 
     .inner {
       width: 100%;
@@ -156,43 +142,43 @@
   }
 
   h2 {
-    color: #485cc7;
+    color: #30261d;
     margin: 40px auto 20px auto;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-family: 'nestle_text_tfbook', sans-serif;
+    font-weight: normal;
     font-size: 35px;
     line-height: 35px;
     text-align: center;
   }
 
   h3 {
-    color: #555;
+    color: #64513d;
     width: 95%;
     max-width: 500px;
     margin: 0 auto 40px auto;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-family: 'nestle_text_tfbook', sans-serif;
+    font-weight: normal;
     font-size: 20px;
     line-height: 25px;
     text-align: center;
   }
 
   h4 {
-    color: #b3aa91;
+    color: #64513d;
     margin: 0;
     padding: 15px 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'nestle_text_tflight', sans-serif;
     font-size: 23px;
     text-align: center;
   }
 
   p {
-    color: #555;
-    font-family: 'Arial', sans-serif;
+    color: #64513d;
+    font-family: 'nestle_text_tflight', sans-serif;
     font-size: 16px;
 
     a {
-      color: #ff9e1b;
+      color: #007cba;
       text-decoration: none;
       font-size: 16px;
     }
@@ -202,7 +188,7 @@
       font-size: 12px;
 
       span {
-        color: #ff9e1b;
+        color: #007cba;
       }
     }
   }
@@ -224,9 +210,9 @@
   .tn-fields {
 
     span {
-      color: #4a4542;
+      color: #64513d;
       margin-right: 5px;
-      font-family: 'Roboto', sans-serif, sans-serif;
+      font-family: 'nestle_text_tflight', sans-serif, sans-serif;
       font-weight: 700;
       text-transform: uppercase;
       font-size: 11px;
@@ -237,14 +223,14 @@
   .footer {
 
     p {
-      color: #888888;
+      color: #64513d;
       margin: 30px auto;
       text-align: center;
-      font-family: 'antenna-regular', sans-serif;
+      font-family: 'nestle_text_tflight', sans-serif;
       font-size: 12px;
 
       a {
-        color: #888;
+        color: #64513d;
         text-decoration: underline;
         font-size: 12px;
       }
